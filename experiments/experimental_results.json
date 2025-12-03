@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-02T16:01:51.261050",
+    "total_experiments": 17,
+    "tool": "FinVerify",
+    "verification_engine": "Z3 SMT Solver"
+  },
+  "results": [
+    {
+      "experiment_name": "ERC20_Conservation_ops2",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 38.0,
+      "timestamp": "2025-12-02T16:01:51.008049",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "conservation",
+      "state_variables": 3,
+      "constraints": 11
+    },
+    {
+      "experiment_name": "ERC20_Conservation_ops3",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 12.0,
+      "timestamp": "2025-12-02T16:01:51.022050",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "conservation",
+      "state_variables": 4,
+      "constraints": 14
+    },
+    {
+      "experiment_name": "ERC20_Conservation_ops5",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 17.0,
+      "timestamp": "2025-12-02T16:01:51.043050",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "conservation",
+      "state_variables": 6,
+      "constraints": 20
+    },
+    {
+      "experiment_name": "ERC20_Conservation_ops8",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 17.0,
+      "timestamp": "2025-12-02T16:01:51.062049",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "conservation",
+      "state_variables": 9,
+      "constraints": 29
+    },
+    {
+      "experiment_name": "Bridge_Conservation_amt100",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 21.0,
+      "timestamp": "2025-12-02T16:01:51.085050",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "cross_chain_invariant",
+      "state_variables": 4,
+      "constraints": 8
+    },
+    {
+      "experiment_name": "Bridge_Conservation_amt1000",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 13.0,
+      "timestamp": "2025-12-02T16:01:51.101049",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "cross_chain_invariant",
+      "state_variables": 4,
+      "constraints": 8
+    },
+    {
+      "experiment_name": "Bridge_Conservation_amt10000",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 10.99,
+      "timestamp": "2025-12-02T16:01:51.113049",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "cross_chain_invariant",
+      "state_variables": 4,
+      "constraints": 8
+    },
+    {
+      "experiment_name": "Bridge_Conservation_amt100000",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 12.0,
+      "timestamp": "2025-12-02T16:01:51.126051",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "cross_chain_invariant",
+      "state_variables": 4,
+      "constraints": 8
+    },
+    {
+      "experiment_name": "Overflow_Protection_8bit",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 16.0,
+      "timestamp": "2025-12-02T16:01:51.143051",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "arithmetic_safety",
+      "state_variables": 3,
+      "constraints": 5
+    },
+    {
+      "experiment_name": "Overflow_Protection_16bit",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 11.0,
+      "timestamp": "2025-12-02T16:01:51.155049",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "arithmetic_safety",
+      "state_variables": 3,
+      "constraints": 5
+    },
+    {
+      "experiment_name": "Overflow_Protection_32bit",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 12.0,
+      "timestamp": "2025-12-02T16:01:51.168051",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "arithmetic_safety",
+      "state_variables": 3,
+      "constraints": 5
+    },
+    {
+      "experiment_name": "Overflow_Protection_256bit",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 12.0,
+      "timestamp": "2025-12-02T16:01:51.181050",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "arithmetic_safety",
+      "state_variables": 3,
+      "constraints": 5
+    },
+    {
+      "experiment_name": "Replay_Attack_Detection",
+      "result": "[VIOLATED]",
+      "execution_time_ms": 11.0,
+      "timestamp": "2025-12-02T16:01:51.193048",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "security",
+      "state_variables": 6,
+      "constraints": 12
+    },
+    {
+      "experiment_name": "Hoare_VCGen_bal100",
+      "result": "True",
+      "execution_time_ms": 11.01,
+      "timestamp": "2025-12-02T16:01:51.205061",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "security",
+      "state_variables": 6,
+      "constraints": 12
+    },
+    {
+      "experiment_name": "Hoare_VCGen_bal500",
+      "result": "True",
+      "execution_time_ms": 11.0,
+      "timestamp": "2025-12-02T16:01:51.216057",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "security",
+      "state_variables": 6,
+      "constraints": 12
+    },
+    {
+      "experiment_name": "Hoare_VCGen_bal1000",
+      "result": "True",
+      "execution_time_ms": 11.99,
+      "timestamp": "2025-12-02T16:01:51.228049",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "security",
+      "state_variables": 6,
+      "constraints": 12
+    },
+    {
+      "experiment_name": "Inductive_Bridge_Invariant",
+      "result": "True",
+      "execution_time_ms": 31.0,
+      "timestamp": "2025-12-02T16:01:51.259047",
+      "solver_timeout_ms": 30000,
+      "z3_version": "z3-solver 4.12+",
+      "property_type": "cross_chain_invariant",
+      "state_variables": 4,
+      "constraints": 8
+    }
+  ]
+}

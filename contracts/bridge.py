@@ -1,9 +1,12 @@
 """
 Cross-Chain Bridge Contract (Simplified Python Model)
+
+Note: this is a simplified model for verification purposes
+      real implementation would need more error handling etc
 """
 
 
-class BridgeChainA:
+class BridgeChainA:  # source chain
     def __init__(self):
         self.locked = 0
         self.nonces = set()
@@ -12,10 +15,10 @@ class BridgeChainA:
         if amount <= 0:
             return False
         if nonce in self.nonces:
-            return False  # Replay protection
+            return False  # Replay protection - important!!
         
         self.locked += amount
-        self.nonces.add(nonce)
+        self.nonces.add(nonce)  # remember we processed this
         return True
 
 
@@ -40,12 +43,13 @@ class BridgeChainB:
     def mint(self, amount: int, message_hash: str) -> bool:
         if amount <= 0:
             return False
-        # BUG: Missing replay protection!
+        # BUG: Missing replay protection! 
+        # TODO: should check if message_hash already processed
         # if message_hash in self.processed:
         #     return False
         
         self.minted += amount
-        # self.processed.add(message_hash)  # Should do this!
+        # self.processed.add(message_hash)  # Should do this! bug here
         return True
 
     def burn(self, amount: int) -> bool:

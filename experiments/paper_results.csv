@@ -1,0 +1,21 @@
+actual_result,execution_time_ms,experiment_name,implementation_type,property_category,status,timestamp
+VERIFIED,11.09,Secure_Transfer_VCGen_bal100,SECURE,Other,CORRECT,2025-12-02T16:06:37.922573
+VERIFIED,9.99,Secure_Transfer_VCGen_bal500,SECURE,Other,CORRECT,2025-12-02T16:06:37.932563
+VERIFIED,11.02,Secure_Transfer_VCGen_bal1000,SECURE,Other,CORRECT,2025-12-02T16:06:37.944583
+VERIFIED,33.0,Secure_Bridge_Inductive_Proof,SECURE,Cross-Chain,CORRECT,2025-12-02T16:06:37.977579
+VERIFIED,11.32,Secure_MultiHop_Bridge,SECURE,Cross-Chain,CORRECT,2025-12-02T16:06:37.988897
+VERIFIED,11.0,Secure_LiquidityPool_WithFees,SECURE,Other,CORRECT,2025-12-02T16:06:38.000990
+VERIFIED,11.0,Secure_Timelock_OptimisticRollup,SECURE,Advanced Security,CORRECT,2025-12-02T16:06:38.012995
+VERIFIED,12.0,Secure_Byzantine_MultiSig_5of9,SECURE,Advanced Security,CORRECT,2025-12-02T16:06:38.025905
+BUG_FOUND,11.8,Buggy_ERC20_Conservation_ops2,BUGGY,Token Conservation,CORRECT,2025-12-02T16:06:38.038905
+BUG_FOUND,12.31,Buggy_ERC20_Conservation_ops3,BUGGY,Token Conservation,CORRECT,2025-12-02T16:06:38.052267
+BUG_FOUND,13.0,Buggy_ERC20_Conservation_ops5,BUGGY,Token Conservation,CORRECT,2025-12-02T16:06:38.066272
+BUG_FOUND,10.0,Buggy_Bridge_Conservation_amt100,BUGGY,Token Conservation,CORRECT,2025-12-02T16:06:38.077272
+BUG_FOUND,11.02,Buggy_Bridge_Conservation_amt1000,BUGGY,Token Conservation,CORRECT,2025-12-02T16:06:38.088287
+BUG_FOUND,9.99,Buggy_Bridge_Conservation_amt10000,BUGGY,Token Conservation,CORRECT,2025-12-02T16:06:38.099288
+BUG_FOUND,11.0,Buggy_Overflow_8bit,BUGGY,Arithmetic Safety,CORRECT,2025-12-02T16:06:38.111287
+BUG_FOUND,11.64,Buggy_Overflow_16bit,BUGGY,Arithmetic Safety,CORRECT,2025-12-02T16:06:38.123927
+BUG_FOUND,10.01,Buggy_Overflow_32bit,BUGGY,Arithmetic Safety,CORRECT,2025-12-02T16:06:38.134935
+BUG_FOUND,12.0,Buggy_Overflow_256bit,BUGGY,Arithmetic Safety,CORRECT,2025-12-02T16:06:38.147929
+BUG_FOUND,9.98,Buggy_Bridge_ReplayAttack,BUGGY,Cross-Chain,CORRECT,2025-12-02T16:06:38.158928
+BUG_FOUND,11.0,Buggy_AtomicSwap_Unfair_HTLC,BUGGY,Other,CORRECT,2025-12-02T16:06:38.170928

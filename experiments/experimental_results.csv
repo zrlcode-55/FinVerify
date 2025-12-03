@@ -1,0 +1,18 @@
+constraints,execution_time_ms,experiment_name,property_type,result,solver_timeout_ms,state_variables,timestamp,z3_version
+11,38.0,ERC20_Conservation_ops2,conservation,[VIOLATED],30000,3,2025-12-02T16:01:51.008049,z3-solver 4.12+
+14,12.0,ERC20_Conservation_ops3,conservation,[VIOLATED],30000,4,2025-12-02T16:01:51.022050,z3-solver 4.12+
+20,17.0,ERC20_Conservation_ops5,conservation,[VIOLATED],30000,6,2025-12-02T16:01:51.043050,z3-solver 4.12+
+29,17.0,ERC20_Conservation_ops8,conservation,[VIOLATED],30000,9,2025-12-02T16:01:51.062049,z3-solver 4.12+
+8,21.0,Bridge_Conservation_amt100,cross_chain_invariant,[VIOLATED],30000,4,2025-12-02T16:01:51.085050,z3-solver 4.12+
+8,13.0,Bridge_Conservation_amt1000,cross_chain_invariant,[VIOLATED],30000,4,2025-12-02T16:01:51.101049,z3-solver 4.12+
+8,10.99,Bridge_Conservation_amt10000,cross_chain_invariant,[VIOLATED],30000,4,2025-12-02T16:01:51.113049,z3-solver 4.12+
+8,12.0,Bridge_Conservation_amt100000,cross_chain_invariant,[VIOLATED],30000,4,2025-12-02T16:01:51.126051,z3-solver 4.12+
+5,16.0,Overflow_Protection_8bit,arithmetic_safety,[VIOLATED],30000,3,2025-12-02T16:01:51.143051,z3-solver 4.12+
+5,11.0,Overflow_Protection_16bit,arithmetic_safety,[VIOLATED],30000,3,2025-12-02T16:01:51.155049,z3-solver 4.12+
+5,12.0,Overflow_Protection_32bit,arithmetic_safety,[VIOLATED],30000,3,2025-12-02T16:01:51.168051,z3-solver 4.12+
+5,12.0,Overflow_Protection_256bit,arithmetic_safety,[VIOLATED],30000,3,2025-12-02T16:01:51.181050,z3-solver 4.12+
+12,11.0,Replay_Attack_Detection,security,[VIOLATED],30000,6,2025-12-02T16:01:51.193048,z3-solver 4.12+
+12,11.01,Hoare_VCGen_bal100,security,True,30000,6,2025-12-02T16:01:51.205061,z3-solver 4.12+
+12,11.0,Hoare_VCGen_bal500,security,True,30000,6,2025-12-02T16:01:51.216057,z3-solver 4.12+
+12,11.99,Hoare_VCGen_bal1000,security,True,30000,6,2025-12-02T16:01:51.228049,z3-solver 4.12+
+8,31.0,Inductive_Bridge_Invariant,cross_chain_invariant,True,30000,4,2025-12-02T16:01:51.259047,z3-solver 4.12+

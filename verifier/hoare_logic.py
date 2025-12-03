@@ -1,11 +1,14 @@
 """
 Hoare Logic Verification for Smart Contracts
 Implements course concepts: {P} C {Q} verification with weakest preconditions
+
+This applies the formal verification theory we learned in CS 6315
+to smart contract verification - pretty cool!
 """
 
 from z3 import *
 from typing import Dict, List, Tuple
-from dataclasses import dataclass
+from dataclasses import dataclass  # makes the hoare triple class cleaner
 
 
 @dataclass
@@ -53,6 +56,7 @@ class WeakestPreconditionCalculator:
             WP(y := x + 1, y > 1) = (x + 1) > 1 = x > 0 ✓
         """
         # Substitute expression for variable in postcondition
+        # this is the core WP rule for assignments!
         return substitute(postcondition, (var, expr))
 
 
@@ -90,7 +94,7 @@ class WeakestPreconditionCalculator:
         Method: Check if P ==> WP(C, Q)
         
         This is THE fundamental verification technique:
-        1. Calculate WP(C, Q)
+        1. Calculate WP(C,Q)
         2. Check if P implies WP(C, Q)
         3. If yes, triple is valid
         """
@@ -256,8 +260,8 @@ class VerificationConditionGenerator:
         self.solver.add(Inv)  # Assume invariant
         self.solver.add(amount > 0)
         self.solver.add(locked_prime == locked + amount)
-        self.solver.add(minted_prime == minted)  # minted unchanged
-        self.solver.add(Not(Inv_prime))  # Try to violate
+        self.solver.add(minted_prime == minted)  # minted unchanged on lock
+        self.solver.add(Not(Inv_prime))  # Try to violate the invariant
         
         if self.solver.check() == unsat:
             print("  [SUCCESS] Inductive case PROVEN")

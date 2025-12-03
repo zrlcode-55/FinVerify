@@ -1,17 +1,22 @@
 """
 Financial Property Checker using Z3 SMT Solver
 Verifies critical financial properties in smart contracts
+
+Author note: this implements the verification logic we discussed in class
 """
 
 from z3 import *
 from typing import List, Dict, Tuple
 from enum import Enum
 
+# using Z3 because its the most mature SMT solver and has good python bindings
+# took me a while to figure out the right way to encode constraints
+
 
 class VerificationResult(Enum):
     VERIFIED = "[VERIFIED]"
     VIOLATED = "[VIOLATED]"
-    UNKNOWN = "[UNKNOWN]"
+    UNKNOWN = "[UNKNOWN]"  # sometimes solver times out
 
 
 class PropertyChecker:
@@ -19,8 +24,8 @@ class PropertyChecker:
     
     def __init__(self, timeout_ms=30000):
         self.solver = Solver()
-        self.solver.set("timeout", timeout_ms)
-        self.violations = []
+        self.solver.set("timeout", timeout_ms)  # 30 seconds should be enough for most properties
+        self.violations = []   # keep track of found bugs
 
     def reset(self):
         """Reset the solver for a new verification"""
@@ -53,9 +58,9 @@ class PropertyChecker:
         self.solver.add(total_supply == initial_supply)
         self.solver.add(total_supply > 0)
         
-        # All balances start non-negative
+        # All balances start non-negative  (basic sanity check)
         for bal in balances:
-            self.solver.add(bal >= 0)
+            self.solver.add(bal >= 0)  # cant have negative tokens!
         
         # Initial distribution: all tokens in first account
         self.solver.add(balances[0] == total_supply)
@@ -67,7 +72,7 @@ class PropertyChecker:
         
         running_balances = [balances[0]]
         for i, amount in enumerate(transfer_amounts):
-            self.solver.add(amount > 0)  # Transfers must be positive
+            self.solver.add(amount > 0)  # Transfers must be positive (no zero or negative transfers)
             
             # Source has enough balance
             self.solver.add(running_balances[i] >= amount)
@@ -85,7 +90,7 @@ class PropertyChecker:
         
         print("Checking: SUM(balances) == initial_supply")
         
-        # Try to find a violation
+        # Try to find a violation (negation approach from class)
         self.solver.add(balance_sum != total_supply)
         
         result = self.solver.check()

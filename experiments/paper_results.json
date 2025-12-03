@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-02T16:06:38.173931",
+    "total_experiments": 20,
+    "tool": "FinVerify",
+    "purpose": "IEEE Paper Submission"
+  },
+  "results": [
+    {
+      "experiment_name": "Secure_Transfer_VCGen_bal100",
+      "implementation_type": "SECURE",
+      "actual_result": "VERIFIED",
+      "status": "CORRECT",
+      "execution_time_ms": 11.09,
+      "timestamp": "2025-12-02T16:06:37.922573",
+      "property_category": "Other"
+    },
+    {
+      "experiment_name": "Secure_Transfer_VCGen_bal500",
+      "implementation_type": "SECURE",
+      "actual_result": "VERIFIED",
+      "status": "CORRECT",
+      "execution_time_ms": 9.99,
+      "timestamp": "2025-12-02T16:06:37.932563",
+      "property_category": "Other"
+    },
+    {
+      "experiment_name": "Secure_Transfer_VCGen_bal1000",
+      "implementation_type": "SECURE",
+      "actual_result": "VERIFIED",
+      "status": "CORRECT",
+      "execution_time_ms": 11.02,
+      "timestamp": "2025-12-02T16:06:37.944583",
+      "property_category": "Other"
+    },
+    {
+      "experiment_name": "Secure_Bridge_Inductive_Proof",
+      "implementation_type": "SECURE",
+      "actual_result": "VERIFIED",
+      "status": "CORRECT",
+      "execution_time_ms": 33.0,
+      "timestamp": "2025-12-02T16:06:37.977579",
+      "property_category": "Cross-Chain"
+    },
+    {
+      "experiment_name": "Secure_MultiHop_Bridge",
+      "implementation_type": "SECURE",
+      "actual_result": "VERIFIED",
+      "status": "CORRECT",
+      "execution_time_ms": 11.32,
+      "timestamp": "2025-12-02T16:06:37.988897",
+      "property_category": "Cross-Chain"
+    },
+    {
+      "experiment_name": "Secure_LiquidityPool_WithFees",
+      "implementation_type": "SECURE",
+      "actual_result": "VERIFIED",
+      "status": "CORRECT",
+      "execution_time_ms": 11.0,
+      "timestamp": "2025-12-02T16:06:38.000990",
+      "property_category": "Other"
+    },
+    {
+      "experiment_name": "Secure_Timelock_OptimisticRollup",
+      "implementation_type": "SECURE",
+      "actual_result": "VERIFIED",
+      "status": "CORRECT",
+      "execution_time_ms": 11.0,
+      "timestamp": "2025-12-02T16:06:38.012995",
+      "property_category": "Advanced Security"
+    },
+    {
+      "experiment_name": "Secure_Byzantine_MultiSig_5of9",
+      "implementation_type": "SECURE",
+      "actual_result": "VERIFIED",
+      "status": "CORRECT",
+      "execution_time_ms": 12.0,
+      "timestamp": "2025-12-02T16:06:38.025905",
+      "property_category": "Advanced Security"
+    },
+    {
+      "experiment_name": "Buggy_ERC20_Conservation_ops2",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 11.8,
+      "timestamp": "2025-12-02T16:06:38.038905",
+      "property_category": "Token Conservation"
+    },
+    {
+      "experiment_name": "Buggy_ERC20_Conservation_ops3",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 12.31,
+      "timestamp": "2025-12-02T16:06:38.052267",
+      "property_category": "Token Conservation"
+    },
+    {
+      "experiment_name": "Buggy_ERC20_Conservation_ops5",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 13.0,
+      "timestamp": "2025-12-02T16:06:38.066272",
+      "property_category": "Token Conservation"
+    },
+    {
+      "experiment_name": "Buggy_Bridge_Conservation_amt100",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 10.0,
+      "timestamp": "2025-12-02T16:06:38.077272",
+      "property_category": "Token Conservation"
+    },
+    {
+      "experiment_name": "Buggy_Bridge_Conservation_amt1000",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 11.02,
+      "timestamp": "2025-12-02T16:06:38.088287",
+      "property_category": "Token Conservation"
+    },
+    {
+      "experiment_name": "Buggy_Bridge_Conservation_amt10000",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 9.99,
+      "timestamp": "2025-12-02T16:06:38.099288",
+      "property_category": "Token Conservation"
+    },
+    {
+      "experiment_name": "Buggy_Overflow_8bit",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 11.0,
+      "timestamp": "2025-12-02T16:06:38.111287",
+      "property_category": "Arithmetic Safety"
+    },
+    {
+      "experiment_name": "Buggy_Overflow_16bit",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 11.64,
+      "timestamp": "2025-12-02T16:06:38.123927",
+      "property_category": "Arithmetic Safety"
+    },
+    {
+      "experiment_name": "Buggy_Overflow_32bit",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 10.01,
+      "timestamp": "2025-12-02T16:06:38.134935",
+      "property_category": "Arithmetic Safety"
+    },
+    {
+      "experiment_name": "Buggy_Overflow_256bit",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 12.0,
+      "timestamp": "2025-12-02T16:06:38.147929",
+      "property_category": "Arithmetic Safety"
+    },
+    {
+      "experiment_name": "Buggy_Bridge_ReplayAttack",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 9.98,
+      "timestamp": "2025-12-02T16:06:38.158928",
+      "property_category": "Cross-Chain"
+    },
+    {
+      "experiment_name": "Buggy_AtomicSwap_Unfair_HTLC",
+      "implementation_type": "BUGGY",
+      "actual_result": "BUG_FOUND",
+      "status": "CORRECT",
+      "execution_time_ms": 11.0,
+      "timestamp": "2025-12-02T16:06:38.170928",
+      "property_category": "Other"
+    }
+  ]
+}
